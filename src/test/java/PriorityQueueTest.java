@@ -43,7 +43,7 @@ public class PriorityQueueTest {
     public void PriorityQueue_exceptionTest_a() {
         assertThrows(NullPointerException.class, () -> {
             PriorityQueue<String> test = new PriorityQueue<>();
-            test.add(null);
+            test.add("null");
         });
     }
     @Test
