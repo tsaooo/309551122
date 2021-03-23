@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -43,7 +42,7 @@ public class PriorityQueueTest {
     public void PriorityQueue_exceptionTest_a() {
         assertThrows(NullPointerException.class, () -> {
             PriorityQueue<String> test = new PriorityQueue<>();
-            test.add("null");
+            test.add(null);
         });
     }
     @Test
