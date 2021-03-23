@@ -59,7 +59,7 @@ public class PriorityQueueTest {
         });
     }
     @Test
-    public void PriorityQueue_expceptionTest_c(){
+    public void PriorityQueue_exceptionTest_c(){
         Exception exception = assertThrows(IllegalArgumentException.class, ()->{
             PriorityQueue<String> test = new PriorityQueue<>(0);
         });
